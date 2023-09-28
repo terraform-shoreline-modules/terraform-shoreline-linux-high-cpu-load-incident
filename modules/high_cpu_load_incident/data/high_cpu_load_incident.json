@@ -7,7 +7,7 @@
       "value": ""
     },
     {
-      "name": "INTERVAL",
+      "name": "COUNT",
       "value": ""
     },
     {
@@ -15,7 +15,7 @@
       "value": ""
     },
     {
-      "name": "COUNT",
+      "name": "INTERVAL",
       "value": ""
     },
     {
@@ -144,7 +144,7 @@
       "name": "cell_19",
       "type": "OP_LANG",
       "enabled": true,
-      "content": "host | host_name=$HOST_NAME | invoke_get_highest_cpu_usage_info()"
+      "content": "host | host_name=$HOST_NAME | invoke_get_highest_cpu_usage()"
     },
     {
       "name": "cell_20",
@@ -156,7 +156,7 @@
       "name": "cell_21",
       "type": "OP_LANG",
       "enabled": true,
-      "content": "host | host_name=$HOST_NAME | invoke_cpu_process_service_thresholds()"
+      "content": "host | host_name=$HOST_NAME | invoke_cpu_processes_services_thresholds()"
     },
     {
       "name": "cell_22",
@@ -168,7 +168,7 @@
       "name": "cell_23",
       "type": "OP_LANG",
       "enabled": true,
-      "content": "host | host_name=$HOST_NAME | invoke_cpu_threshold()"
+      "content": "host | host_name=$HOST_NAME | invoke_cpu_threshold_check()"
     }
   ]
 }
